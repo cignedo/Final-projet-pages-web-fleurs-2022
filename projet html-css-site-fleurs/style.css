@@ -1,0 +1,251 @@
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: gainsboro;
+    border-bottom: 10px solid black;
+    display:flex;    
+}
+
+.titreheader{
+    width: 150px;
+    height: 100px;  
+}
+
+.titreh1{/*avec attribution du nom d'animation pour pouvoir l'appeler*/
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein{/*animation de droite vers la gauche des titres*/
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.titreh2{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.titreh3{
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein{/*animation de droite vers la gauche des titres*/
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.imgfeuilleshead{/*bannière sur tous les hauts de pages*/
+    width: 100%;
+    height: 300px ;
+}
+
+.imgfeuillesfoot{/*bannière sur toutes les fins de pages*/
+    width: 100%;
+    height: 300px;
+}
+
+#container{/*page d'accueil*/
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px;    
+}
+
+p:hover{
+    background-image: url(/leaves-6981921_1920.jpg);
+    
+}
+
+.par1, .par2, .par3, .par4, .par6 {/*paragraphes des pages*/
+    padding: 10px;
+    text-align: justify;
+}
+
+#container2{/*page d'accueil*/
+    width: 100%;
+    height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);    
+}
+
+.imgoiseaux{/*page d'accueil*/
+    grid-column: 2/2;
+    margin-left: auto;
+    margin-right: auto; 
+    position:relative;
+}
+
+.par5{/*page d'accueil*/
+    grid-row: 1/2;
+    padding: 20px;
+    text-align: justify;
+    overflow: auto;
+}
+.par50{/*page d'accueil*/
+    padding: 10px;
+    text-align: justify;
+} 
+
+#container3{/*page apropos*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 20px;
+}
+
+#container30{/*page apropos*/
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);  
+}
+
+.par7{/*page apropos*/
+    padding: 10px;
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.par70{/*page apropos*/
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.imgcercfleur{/*page apropos*/
+    grid-row: 1/3;
+    grid-column: 3/3;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+#container4{/*page services*/
+    display: grid;
+    width: 100%;
+    height: 2000px;
+    grid-template-columns: repeat(3,1fr); 
+    grid-gap: 30px;
+}
+
+.parservices{/*page services*/
+    text-align: justify;   
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.imgint{/*page services*/
+   max-width: 100%;
+   max-height: 100%; 
+   position: relative;
+}
+
+.imgintfem{/*page services*/
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 20px; 
+    position: relative;
+ }
+
+.video{/*video fin de page "services"*/
+    margin-top: 100px;
+    margin-bottom: 50px;
+ }
+
+#naviguation{
+   position: absolute;
+   width: 700px;
+}
+
+.menu:hover{
+    border: 1px dotted gray;
+    background-color:beige;    
+}
+
+ul{/*menu nav (disposition côte à côte)*/
+    display:flex;
+    margin-left:100%;
+}
+
+li{/*menu nav (espacement)*/
+    padding: 20px;
+    list-style-type: none;/*pour enlever les points devant les éléments "li"*/
+}
+
+#propos{/*menu nav*/
+    white-space: nowrap;/*pour ecrire "a propos" l'un à côté de l'autre pas l'un au-dessus de l'autre*/
+}
+
+a{/*menu nav et footer*/
+    text-decoration: none;
+    color:black;      
+}
+
+a:hover{/*au survol les liens des reseaux sociaux changent de couleur*/
+    text-decoration:none;
+    color:blue;
+}
+
+footer{/*footer (bordures, couleur)*/
+    background-color:gainsboro;
+    border-top: 5px solid black;
+}
+
+i{/*footer (liens facebook, twitter, instagram , mentions légales*/
+    color:black;
+    margin-right: 10px;
+}
+
+input{/*formulaire de contact*/
+    margin-bottom: 10px;
+}
+
+form{/*formulaire de contact*/
+    text-align: center;
+    margin: 50px;
+}
+
+form:hover{
+    background-image:url(/leaves-6981921_1920.jpg);   
+}
+
+select{/*formulaire de contact (nationalité)*/
+    width: 300px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+#button{/*formulaire de contact (bouton valider)*/
+    background-color: rgb(138, 186, 248);
+    width: 10%;
+    margin-top: 10px;   
+}
+
+.champs{/*formulaire de contact (taille, dimension et couleurs des cases*/
+    width: 300px;
+    height: 20px;
+    border: 1px solid black;
+}
+
